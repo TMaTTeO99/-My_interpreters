@@ -211,5 +211,5 @@ let evalprog p =
   let p3 = Prog([Fun("tria", "x", Ifthenelse(EQ(Den "x", CInt 0), CInt 5, Add(Den "x", MyApply("tria", Sub(Den "x", CInt 1)))))],MyApply("tria", CInt 4));;
 
   evalprog p1;;
-  evalprog p2;:
+  evalprog p2;;
   evalprog p3;;
